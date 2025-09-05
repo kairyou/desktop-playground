@@ -46,42 +46,54 @@ desktop/
 pnpm install
 ```
 
+### 生成图标
+
+```bash
+# 从 icon-source.svg 生成所有格式的图标
+pnpm generate-icons
+```
+
 ### 开发模式
 
-启动所有项目的开发模式：
+**推荐：** 在根目录单独启动某个客户端：
+```bash
+# 启动 Electron 客户端
+pnpm dev:electron
+
+# 启动 Tauri 客户端
+pnpm dev:tauri
+```
+
+同时启动所有项目：
 ```bash
 pnpm dev
 ```
 
-单独启动项目：
-```bash
-# Electron客户端
-cd apps/electron-client
-pnpm run dev
-
-# Tauri客户端
-cd apps/tauri-client
-pnpm run tauri:dev
-```
-
 ### 构建
 
-构建所有项目：
+在根目录构建：
 ```bash
+# 构建 Electron 客户端
+pnpm build:electron
+
+# 构建 Tauri 客户端
+pnpm build:tauri
+
+# 构建所有项目
 pnpm build
 ```
 
-单独构建：
+详细构建选项：
 ```bash
-# Electron客户端
+# Electron 平台特定构建
 cd apps/electron-client
-pnpm run build:win  # Windows
-pnpm run build:mac  # macOS
-pnpm run build:linux  # Linux
+pnpm build:win    # Windows
+pnpm build:mac    # macOS  
+pnpm build:linux  # Linux
 
-# Tauri客户端
+# Tauri 构建
 cd apps/tauri-client
-pnpm run tauri:build
+pnpm tauri:build
 ```
 
 ### 代码格式化
@@ -104,6 +116,9 @@ pnpm lint
 - ✅ TDesign React UI组件库
 - ✅ Vite 构建工具，开发体验佳
 - ✅ Electron 22.3.27 兼容 Windows 7
+- ✅ 热重载支持，修改shared-ui实时生效
+- ✅ 一键生成多平台图标
+- ✅ 优化的启动脚本
 
 ## 项目说明
 
