@@ -77,4 +77,25 @@ apps\electron-client\build 目录下 应该不要被 gitignore排除? 另外 ele
 帮我增加路由功能, 要结合react的最佳实践, 清晰的 代码/文件/目录结构.                 ││   页面看是不是都放到 pages/内, 除了首页, 我要加很多demos测试页面, 需要                ││   有demos/xxx路由, 然后第一个 demo 应该就叫 MasterGo. 帮我创建 路由/页面, 并且首页    ││   要有 link 跳转到 demos  
 -----------
 
+● 路由功能已配置完成：
+
+  目录结构：
+  packages/shared-ui/src/
+  ├── pages/
+  │   ├── Home.tsx              # 首页
+  │   ├── demos/
+  │   │   └── MasterGo.tsx      # MasterGo demo页面
+  │   └── index.ts              # 页面导出
+  ├── components/
+  │   └── Layout.tsx            # 更新支持路由导航
+  └── App.tsx                   # 路由配置
+
+  功能特性：
+  - 使用 React Router v7 最新版本
+  - 首页展示 Demo 卡片，点击可跳转到 /demos/mastergo
+  - Layout 组件支持导航，非首页显示 Home 按钮
+  - 页面间流畅切换，保持一致的布局结构
+
+  现在你可以启动应用查看路由效果，并继续添加更多 demo 页面。
+
 -------------------------------------------------------------------
