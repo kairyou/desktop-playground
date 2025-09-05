@@ -1,0 +1,42 @@
+# Node / pnpm
+node_modules/
+.pnpm-store/
+.pnpm-debug.log*
+
+# Builds / outputs
+dist/
+build/
+out/
+coverage/
+*.log
+logs/
+*.tsbuildinfo
+
+# Electron (electron-vite)
+/apps/electron-client/dist/
+/apps/electron-client/dist-electron/
+/apps/electron-client/out/
+/apps/electron-client/release/
+
+# Tauri / Rust
+/apps/tauri-client/src-tauri/target/
+/apps/tauri-client/target/
+/target/
+/apps/tauri-client/src-tauri/Cargo.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env files
+.env*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+.history/
+
+# Misc
+*.bak
+*.tmp

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+out/
+build/
+coverage/
+*.min.js
+*.min.css
+apps/tauri-client/src-tauri/

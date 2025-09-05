@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm install:*)",
+      "Bash(pnpm run:*)",
+      "Read(/C:\\Users\\Administrator\\dev\\demos\\desktop/**)",
+      "Read(/C:\\Users\\Administrator\\dev\\demos\\desktop\\packages\\shared-ui\\dist/**)",
+      "Read(/C:\\Users\\Administrator\\dev\\demos\\desktop\\apps\\tauri-client\\dist/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
