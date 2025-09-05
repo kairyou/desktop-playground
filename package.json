@@ -6,17 +6,20 @@
     "dev": "pnpm --parallel run dev",
     "build": "pnpm --recursive run build",
     "lint": "pnpm --recursive run lint",
-    "format": "pnpm --recursive run format"
+    "format": "pnpm --recursive run format",
+    "generate-icons": "node scripts/generate-icons.js"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
+    "electron-icon-builder": "^2.0.1",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "prettier": "^3.2.5",
+    "sharp": "^0.34.3",
     "typescript": "^5.3.3"
   }
 }
