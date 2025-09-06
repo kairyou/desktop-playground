@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ConfigProvider } from 'tdesign-react'
 import { Layout } from './components'
-import { Home, MasterGo } from './pages'
+import { Home, DesignTools } from './pages'
 import 'tdesign-react/es/style/index.css'
 
 const App: React.FC = () => {
@@ -12,7 +12,7 @@ const App: React.FC = () => {
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/demos/mastergo" element={<MasterGo />} />
+            <Route path="/demos/design-tools" element={<DesignTools />} />
           </Routes>
         </Layout>
       </BrowserRouter>

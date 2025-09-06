@@ -1,2 +1,2 @@
 export { default as Home } from './Home'
-export { default as MasterGo } from './demos/MasterGo'
+export { default as DesignTools } from './demos/DesignTools'

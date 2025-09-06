@@ -13,10 +13,10 @@ const Home: React.FC = () => {
       <div style={{ marginBottom: '32px' }}>
         <h2>Demos</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '16px' }}>
-          <Card title="MasterGo" style={{ minHeight: '120px' }}>
-            <p>Explore MasterGo demo functionality</p>
+          <Card title="Design Tools" style={{ minHeight: '120px' }}>
+            <p>Generate content based on design files (Figma, MasterGo, etc.)</p>
             <div style={{ marginTop: '16px' }}>
-              <Link to="/demos/mastergo">
+              <Link to="/demos/design-tools">
                 <Button theme="primary">View Demo</Button>
               </Link>
             </div>
